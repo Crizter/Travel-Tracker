@@ -9,7 +9,8 @@ const { Client } = pg;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-
+// Set up EJS
+app.set('view engine', 'ejs');
 //  SET UP YOUR DATABASE
 // const client = new Client({
 //   user: process.env.DB_USER,
